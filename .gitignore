@@ -1,11 +1,12 @@
-!.gitkeep
 # 数据目录
-data/redis
-!data/redis/.gitkeep
+data/redis/*
 # 日志目录
-log/nginx
-!log/nginx/.gitkeep
-log/php
-!log/php/.gitkeep
+log/nginx/*
+log/php/*
 # 应用目录
-www
+www/*
+!www/.gitkeep
+!data/redis/.gitkeep
+!log/nginx/.gitkeep
+!log/php/.gitkeep
+!.gitkeep
