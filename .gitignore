@@ -1,0 +1,12 @@
+# 数据目录
+data/redis
+!data/redis/.gitkeep
+
+# 日志目录
+log/nginx
+log/php
+!log/nginx/.gitkeep
+!log/php/.gitkeep
+
+# 应用目录
+www
