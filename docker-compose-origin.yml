@@ -5,7 +5,7 @@ version: "3.1"
 services:
 
     webserver:
-      image: registry.cn-beijing.aliyuncs.com/ychy/devtools:nginx1.18
+      build: phpdocker/nginx/alpine
       container_name: webserver
       working_dir: /application
       volumes:
@@ -23,7 +23,7 @@ services:
          - php-fpm
 
     php-fpm:
-      image: registry.cn-beijing.aliyuncs.com/ychy/devtools:php7-fpm
+      build: phpdocker/php-fpm
       container_name: php-fpm
       working_dir: /application
       volumes:
